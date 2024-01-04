@@ -17,6 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -54,6 +56,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-button" type="button">
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Hero-->
@@ -466,7 +473,7 @@
       </div>
     </footer>
     <!--Modal-->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal-container">
         <button class="modal-closing-btn" type="button">
           <svg
@@ -576,6 +583,66 @@
           <button class="review-form-btn" type="submit">Send</button>
         </form>
       </div>
+    </div>
+
+    <!--Mobile Menu-->
+    <div class="mobile-menu-container">
+      <button class="menu-close-btn" type="button">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <ul class="header-addresses">
+        <li>
+          <a class="address" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="address" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+      <ul class="footer-socials-list">
+        <li class="footer-socials">
+          <a class="footer-socials-link" href="#">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials">
+          <a class="footer-socials-link" href="#">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials">
+          <a class="footer-socials-link" href="#">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials">
+          <a class="footer-socials-link" href="#">
+            <svg class="footer-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
