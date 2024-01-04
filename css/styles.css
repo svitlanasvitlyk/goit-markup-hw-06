@@ -298,38 +298,96 @@ button {
   background-color: #404bbf;
 }
 /*Solution*/
+.solutions-con {
+  flex-direction: column;
+}
 .solution-list {
   display: flex;
-  gap: 24px;
+  row-gap: 72px;
+  background-color: #fff;
+  flex-direction: column;
 }
+
+@media screen and (min-width: 768px) {
+  .solution-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .solution-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
 .solution-list-item {
   width: calc((100%-72px) / 4);
 }
 
-.solution-title {
-  color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 8px;
+@media screen and (min-width: 768px) {
+  .solution-list-item {
+    flex-basis: calc((100% - 1 * 24px) / 2);
+  }
 }
+@media screen and (min-width: 1158px) {
+  .solution-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+}
+
+.solution-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 1158px) {
+  .solution-title {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+}
+
 .solution-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  font-weight: 500;
 }
-.solution-icon {
-  border: 1px solid #8e8f99;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  display: flex;
-  height: 112px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-  padding: 24px 0;
+@media screen and (min-width: 1158px) {
+  .list-text {
+    font-weight: 400;
+    max-width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .solution-icon {
+    border: 1px solid #8e8f99;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    display: flex;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 24px 0;
+  }
+}
+
+@media screen and (max-width: 1157.97px) {
+  solution-list-icons {
+    display: none;
+  }
 }
 
 /*Our Team*/
