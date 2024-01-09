@@ -44,21 +44,12 @@ a {
 button {
   font-family: inherit;
 }
-
 .container {
   max-width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
 }
-/*Phone screen
-@media screen and (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
-*/
 /*Tablet screen*/
 @media screen and (min-width: 768px) {
   .container {
@@ -93,10 +84,10 @@ button {
 
 .header-inner {
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo-main {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -105,29 +96,31 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 149px;
+  margin-right: 76px;
   display: inline-flex;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767.97px) {
   .logo-main {
-    margin-right: 120px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .logo-main {
-    margin-right: 76px;
-  }
-}
+
 .logo-span {
   color: #2e2f42;
 }
+
 .page-nav {
+  font-size: 16px;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
+
 .nav-list {
   display: flex;
   gap: 40px;
@@ -177,9 +170,9 @@ button {
   background-color: #404bbf;
   border-radius: 2px;
 }
+
 .address-menu {
   font-style: normal;
-  display: flex;
 }
 
 @media screen and (max-width: 767.97px) {
@@ -381,6 +374,25 @@ button {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .solution-icon {
+    display: flex;
+    background-color: #f4f4fd;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+}
+
+/*svg icons hide*/
+@media screen and (max-width: 1157.97px) {
+  .solution-list-icons {
+    display: none;
+  }
+}
 .solution-title {
   text-align: center;
   font-size: 36px;
